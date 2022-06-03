@@ -1,4 +1,17 @@
-/* My css stuff */
 body{
-    background-color: orange;
+    background-color: #bfbfbf;
+	height: 97vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+section{
+    background-color: #b33c00;
+	height: 85vh;
+	width: 90vw;
+	border: 20px ridge #262626;
+	overflow: hidden;
+}
+button {
+	width: 200px;
 }
