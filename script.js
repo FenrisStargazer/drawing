@@ -1,17 +1,17 @@
 const contain = document.querySelector('section');
 const press = document.querySelector('button');
+const cols = ['#4d0000', '#ff1a1a', '#ff8080', '#791616', '#d72828', '#ff6600', '#993d00', '#ff8533', '#bd4b00', '#ff9900'];
 let params = {
 	fitted: true
 };
 const two = new Two(params);
 two.appendTo(contain);
-run();
+runSq();
 
-function run() {
+function runSq() {
 	let fate = Math.floor(Math.random() * 50) + 5;
 	let x, y, w, h, col = 0;
 	let shape = null;
-	const cols = ['#4d0000', '#ff1a1a', '#ff8080', '#791616', '#d72828', '#ff6600', '#993d00', '#ff8533', '#bd4b00', '#ff9900'];
 	for(let i = 0; i < fate; i++){
 		x = Math.floor(Math.random() * contain.offsetWidth);
 		y = Math.floor(Math.random() * contain.offsetHeight);
@@ -28,5 +28,5 @@ function run() {
 }
 
 press.addEventListener('click', () => {
-    run();
-});
+	runSq();
+}); //adapted code from in class example working with canvas/pictionary thing
